@@ -1,0 +1,1507 @@
+<p>
+    <div class='sheet-2colrow'>
+        <div class='sheet-col'>
+            <h2 style="text-align: center; color: #FFF; background-color: #000;">Hyboria: Age of Blood and Steel</h2>
+            <table style"width: 100%;">
+                <tr>
+                    <td>Character Name</td>
+                    <td><input type="text" name="attr_Name" style="width: 300px" /></td>
+                </tr>
+                <tr>
+                    <td>Vocation</td>
+                    <td><input type="text" name="attr_Occupation" style="width: 300px" style="height: 80px"></textarea>
+                </tr>
+                <tr>
+                    <td>Secondary Trade</td>
+                    <td><input type="text" name="attr_Trade" style="width: 300px" style="height: 80px"></textarea>
+                </tr>
+                <tr>
+                    <td>Race</td>
+                    <td> <input type="text" name="attr_Race" style="width: 100px" /> Sex <input type="text" name="attr_Sex" style="width: 58px" /> 
+                    Age <input type="number" name="attr_Age" style="width: 58px" /></td>
+                </tr>
+                <tr>
+                    <td>Hair</td>
+                    <td> <input type="text" name="attr_Hair" style="width: 60px" /> Skin <input type="text" name="attr_Skin" style="width: 60px" /> 
+                    Eyes <input type="text" name="attr_Eyes" style="width: 60px" /></td>
+                </tr>
+                 <tr>
+                    <td>Height</td>
+                    <td> <input type="number" name="attr_Height1" style="width: 30px"/>ft  <input type="number" name="attr_Height2" style="width: 30px" />in &nbsp;&nbsp;&nbsp;
+                    Weight <input type="number" name="attr_weight" style="width: 58px"/></td>
+                </tr>
+                <tr>
+                    <td>Birthplace</td>
+                    <td><textarea name="attr_Birthplace"  style="height: 20px"></textarea>
+                </tr>  
+                <tr>
+                    <td>Personaility Traits</td>
+                    <td><textarea name="attr_Traits"  style="height: 40px"></textarea>
+                </tr>  
+                <tr>
+                    <td>Special Abilities</td>
+                    <td><textarea name="attr_Abilities"  style="height: 80px"></textarea>
+                </tr>  
+            </table>
+            
+        </div>
+        <div class='sheet-col'>
+            
+                
+            </table>
+            <br>
+            <h3 style="text-align: center; color: #FFF; background-color: #000;">:Characteristics & Rolls:</h3>
+            <table style="width: 100%;" Style="">
+                <tbody>
+                    
+                    </tr>
+                    <tr>
+                        <td>SENS</td>
+                        <td><input type="number" name="attr_SENS" /></td>
+                        <td>DEX</td>
+                        <td><input type="number" name="attr_DEX" /></td>
+                        <td>AGL</td>
+                        <td><input type="number" name="attr_AGL" /></td>
+                        <td>Agility Roll</td>
+                        <td><input type="number" name="attr_Agility" value="[[5*@{AGL}]]" disabled="true" /></td>
+                        <td><button type="roll"  name="roll_Agility" value="/roll 1d100<@{Agility}) Agility Roll"/></td>
+                        </tr>
+                    <tr>
+                        <td>APP</td>
+                        <td><input type="number" name="attr_APP" /></td>
+                        <td>LEADER</td>
+                        <td><input type="number" name="attr_Lead" /></td>
+                        <td>COOL</td>
+                        <td><input type="number" name="attr_COL" /></td>
+                        <td>Cool Roll</td>
+                        <td><input type="number" name="attr_Cool-Roll" value="[[5*(@{COL}+@{Cool-Mod})]]" disabled="true" /></td>
+                        <td><button type="roll"  name="roll_Cool-Roll" value="/roll 1d100<@{Cool-Roll} Cool Roll" /></td>
+                        </tr>
+                    <tr>
+                        <td>SIZ</td>
+                        <td><input type="number" name="attr_SIZ" /></td>
+                        <td>PHY</td>
+                        <td><input type="number" name="attr_PHY" /></td>
+                        <td>HEAL</td>
+                        <td><input type="number" name="attr_HEAL" /></td>
+                        <td>Health Roll</td>
+                        <td><input type="number" name="attr_Health" value="[[5*@{HEAL}]]" disabled="true" /></td>
+                        <td><button type="roll"  name="roll_Health" value="/roll 1d100<@{Health} Health Roll" /></td>
+                        <tr>
+                        <td>DF</td>
+                        <td><input type="number" name="attr_DF" /></td>
+                        <td>Heal/day</td>
+                        <td><input type="number" name="attr_Heal-Rate" /></td>
+                        <td>INT</td>
+                        <td><input type="number" name="attr_INT" /></td>
+                        <td>Idea Roll</td>
+                        <td><input type="number" name="attr_Idea" value="[[4*@{INT}]]" disabled="true" /></td>
+                        <td><button type="roll" name="roll_Idea" value="/roll 1d100<@{Idea} Idea Roll" /></td>
+                        </tr>
+                    <tr>
+                        <td>Walk</td>
+                        <td><input type="number" name="attr_Walk" /></td>
+                        <td>Jog</td>
+                        <td><input type="number" name="attr_Jog" /></td>
+                        <td>Run</td>
+                        <td><input type="number" name="attr_Run" /></td>
+                        <td>Lead Roll</td>
+                        <td><input type="number" name="attr_Lead-Roll" value="[[5*@{Lead}]]" disabled="true" /></td>
+                        <td><button type="roll"  name="roll_Lead-Roll" value="/roll 1d100<@{Lead-Roll} Leadership Roll" /></td>
+                    </tr>
+                    
+                    <td>
+                         
+                    
+                    <tr>
+                       <td>Lift</td>
+                        <td><input type="number" name="attr_Lift" style="width: 52px" /></td>
+                        <td>Carry</td>
+                        <td><input type="number" name="attr_Carry" /></td>
+                        <td>Throw</td>
+                        <td><input type="number" name="attr_Throw-weight" /></td>
+                       <td>Luck Roll</td>
+                        <td><input type="number" name="attr_Luck"  /></td>
+                        <td><button type="roll" name="roll_Luck" value="/roll 1d100<@{Luck} Luck Roll" /></td>
+                         </tr>
+                    <tr>
+                        <td>Hit Points</td>
+                        <td><input type="number" name="attr_hitpoint" value="[(@{HEAL}+@{PHY}+@{SIZ})]" disabled="true"/></td>
+                        <td>Stun</td>
+                        <td><input type="number" name="attr_Stun" value="[[ceil(.25*(@{HEAL}+@{PHY}+@{SIZ}))]]" disabled="true"/></td>
+                        <td>K.O.</td>
+                        <td><input type="number" name="attr_KO" value="[[ceil(.33*(@{HEAL}+@{PHY}+@{SIZ}))]]" disabled="true"/></td>
+                        <td>Consci</td>
+                        <td><input type="number" name="attr_Consci-roll" value="[[ceil(1.5*(@{HEAL}+@{PHY}+@{SIZ}))]]" disabled="true"/></td>
+                        <td><button type="roll" name="roll_Consci-roll" value="/roll 1d100<@{Consci-roll} Consciousness Roll" /></td>
+                    </tr>
+                    <tr>
+                        <td>Cool Mod</td>
+                         <td><input type="number" name="attr_Cool-Mod" /></td>
+                        <td>Skill Max</td>
+                        <td><input type="number" name="attr_Skill-Max"  /></td>
+                       
+                </tr>
+            
+                
+            </table>
+            <table style="width: 100%;">
+                </tr>
+                  <tr>
+                    <td>Attribute Increase
+                    <td><input type="radio" value="1" name="attr_Atribute_Increase"/></td>
+                    <td><input type="radio" value="2" name="attr_Atribute_Increase"/></td>
+                    <td><input type="radio" value="3" name="attr_Atribute_Increase"/></td>
+                    <td><input type="radio" value="4" name="attr_Atribute_Increase"/></td>
+                    <td><input type="radio" value="5" name="attr_Atribute_Increase"/></td>
+                    <td><input type="radio" value="6" name="attr_Atribute_Increase"/></td>
+                    <td><input type="radio" value="7" name="attr_Atribute_Increase"/></td>
+                    <td><input type="radio" value="8" name="attr_Atribute_Increase"/></td>
+                    <td><input type="radio" value="9" name="attr_Atribute_Increase"/></td>
+                    <td><input type="radio" value="10" name="attr_Atribute_Increase"/></td>
+                    <td><input type="radio" value="11" name="attr_Atribute_Increase"/></td>
+                    <td><input type="radio" value="12" name="attr_Atribute_Increase"/></td>
+                    <td><input type="radio" value="13" name="attr_Atribute_Increase"/></td>
+                    <td><input type="radio" value="14" name="attr_Atribute_Increase"/></td>
+                    <td><input type="radio" value="15" name="attr_Atribute_Increase"/></td>
+                    <td><input type="radio" value="16" name="attr_Atribute_Increase"/></td>
+                    <td><input type="radio" value="17" name="attr_Atribute_Increase"/></td>
+                    <td><input type="radio" value="18" name="attr_Atribute_Increase"/></td>
+                    <td><input type="radio" value="19" name="attr_Atribute_Increase"/></td>
+                    <td><input type="radio" value="20" name="attr_Atribute_Increase"/></td>
+                    
+                  
+                </tr>
+            </table>
+        </div>
+    </div>
+</p>
+<hr/>
+<p>
+    <div class='sheet-2colrow'>
+        <div class='sheet-col'>
+            <h3 style="width: 100%; text-align: center; color: #FFF; background-color: #000;">:Magic:</h3>
+               
+            
+            <table style="width: 100%; font-size: 12px;">
+                 <tr>
+                    <td><h4>:Talents:</h4></td>
+                    <td><textarea name="attr_Magic-Talents"  style="height: 50px" ></textarea>
+                </tr>  
+                <tr>
+                    <td><h4>:Feats:</h4></td>
+                    <td><textarea name="attr_Magic-Feats"  style="height: 50px"></textarea>
+                </tr>  
+                <tr>
+                    <td><h4>:Items:</h4></td>
+                    <td><textarea name="attr_Magic-Items"  style="height: 50px"></textarea>
+                </tr> 
+               </table>
+               <table style="width: 115%; font-size: 12px;">
+            
+                 <div class='sheet-col'>
+                 <tr>
+                    <td><h5>Magic Use</h5> </td>
+                    <td><input type="number" name="attr_Magic-Use"  />
+                    <button type="roll" value="/roll 1d20+@{Magic-Use} Magic Use" /></td>
+                    
+                    <td><h5>Magic Knowledge</h5> </td>
+                    <td><input type="number" name="attr_Magic-Know"  />
+                    <button type="roll" value="/roll 1d20+@{Magic-Know} Magic Knowledge" /></td>
+                   
+                  </tr>  
+                  </div>
+                 <div class='sheet-col'>  
+                <tr>
+                 <td><h5>Prestidigitation</h5> </td>
+                    <td><input type="number" name="attr_Presto"  />
+                    <button type="roll" value="/roll 1d20+@{Presto} Prestidigitation" /></td>
+                
+                    <td><h5>Resistance</h5> </td>
+                    <td><input type="number" name="attr_Resistance"  />
+                    <button type="roll" value="/roll 1d20+@{Resistance} Resistance" /></td>
+                  
+                </tr> 
+                </div> 
+                
+                <div class='sheet-col'>
+                <tr> 
+                <td><h5>Detect Magic</h5> </td>
+                    <td><input type="number" name="attr_Detect-Magic"  />
+                    <button type="roll" value="/roll 1d20+@{Detect-Magic} Detect Magic" /></td>
+                    
+                    <td><h5>Magic Save</h5> </td>
+                    <td><input type="number" name="attr_Magic-Save"  />
+                    <button type="roll" value="/roll 1d20+@{Magic-Save} Magic Save" /></td>
+                </tr>
+                </div>
+                 <div class='sheet-col'>
+                <tr> 
+                <td><h5>Concentration</h5> </td>
+                    <td><input type="number" name="attr_Concentration"  />
+                    <button type="roll" value="/roll 1d20+@{Concentration} Concentration" /></td>
+                    
+                    <td><h5>Ghost Sound</h5> </td>
+                    <td><input type="number" name="attr_Ghost-Sound"  />
+                    <button type="roll" value="/roll 1d20+@{Ghost-Sound} Ghost Sound" /></td>
+                    
+                </tr>
+                </div>
+                 <div class='sheet-col'>
+                
+            </table>  &nbsp;&nbsp;&nbsp;
+            
+        </div>
+        <div class='sheet-col'>
+            <div class='sheet-2colrow'>
+                <div class='sheet-col'>
+                    <h3 style="width: 100%; text-align: center; color: #FFF; background-color: #000;">:Spell Energy:</h3>
+                    <table style="width: 100%; font-size: 10px;">
+                       
+                        <tr>
+                    <td><h5>Maximum</h5></td>&nbsp;&nbsp;&nbsp;
+                    <td><input type="number" name="attr_spell-energy" /></td>
+                    <tr>
+                     <td><h5>Recovery /Day</h5></td>&nbsp;&nbsp;&nbsp;
+                    <td><input type="number" name="attr_energy-recovery" /></td>
+                    
+                        </tr>
+                        <tr>
+                     <td><h5>Caster Level</h5></td>&nbsp;&nbsp;&nbsp;
+                    <td><input type="number" name="attr_Caster-Level" /></td>
+                    
+                        </tr>
+                    </table>&nbsp;&nbsp;&nbsp;
+                     <table style="width: 100%; text-align: right; font-size: 10px;">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong>0</strong><br><input type="radio" value="0" name="attr_MP" /></td>
+                            <td>1<br><input type="radio" value="1" name="attr_MP" /></td>
+                            <td>2<br><input type="radio" value="2" name="attr_MP" /></td>
+                        </tr>
+                        <tr>
+                            <td>3<br><input type="radio" value="3" name="attr_MP" /></td>
+                            <td>4<br><input type="radio" value="4" name="attr_MP" /></td>
+                            <td>5<br><input type="radio" value="5" name="attr_MP" /></td>
+                            <td>6<br><input type="radio" value="6" name="attr_MP" /></td>
+                            <td>7<br><input type="radio" value="7" name="attr_MP" /></td>
+                            <td>8<br><input type="radio" value="8" name="attr_MP" /></td>
+                            <td>9<br><input type="radio" value="9" name="attr_MP" checked="true" /></td>
+                        </tr>
+                        <tr>
+                            <td>10<br><input type="radio" value="10" name="attr_MP" /></td>
+                            <td>11<br><input type="radio" value="11" name="attr_MP" /></td>
+                            <td>12<br><input type="radio" value="12" name="attr_MP" /></td>
+                            <td>13<br><input type="radio" value="13" name="attr_MP" /></td>
+                            <td>14<br><input type="radio" value="14" name="attr_MP" /></td>
+                            <td>15<br><input type="radio" value="15" name="attr_MP" /></td>
+                            <td>16<br><input type="radio" value="16" name="attr_MP" /></td>
+                        </tr>
+                         <tr>
+                            <td>17<br><input type="radio" value="17" name="attr_MP" /></td>
+                            <td>18<br><input type="radio" value="18" name="attr_MP" /></td>
+                            <td>19<br><input type="radio" value="19" name="attr_MP" /></td>
+                            <td>20<br><input type="radio" value="20" name="attr_MP" /></td>
+                            <td>21<br><input type="radio" value="21" name="attr_MP" /></td>
+                            <td>22<br><input type="radio" value="22" name="attr_MP" /></td>
+                            <td>23<br><input type="radio" value="23" name="attr_MP" /></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class='sheet-col'>
+                    <h3 style="width: 100%; text-align: center; color: #FFF; background-color: #000;">:Hit Points:</h3>
+                    <table style="width: 100%; font-size: 10px;">
+                         <tr>
+                    <td><strong>Stuned</strong></td>&nbsp;&nbsp;&nbsp;
+                    <td><input type="radio" name="attr_stunned" /></td>
+                    <td><strong>Unconscious</strong></td>
+                    <td><input type="radio" name="attr_stunned" /></td>
+                     <td></td>
+                    <td></td>
+                <tr>
+                       
+                    </table>
+                    <table style="width: 100%; text-align: right; font-size: 10px;">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><strong>-2</strong><br><input type="radio" value="-2" name="attr_HP" /></td>
+                            <td><strong>-1</strong><br><input type="radio" value="-1" name="attr_HP" /></td>
+                            <td><strong>0</strong><br><input type="radio" value="0" name="attr_HP" /></td>
+                            <td>+1<br><input type="radio" value="1" name="attr_HP" /></td>
+                            <td>+2<br><input type="radio" value="2" name="attr_HP" /></td>
+                        </tr>
+                        <tr>
+                            <td>3<br><input type="radio" value="3" name="attr_HP" /></td>
+                            <td>4<br><input type="radio" value="4" name="attr_HP" /></td>
+                            <td>5<br><input type="radio" value="5" name="attr_HP" /></td>
+                            <td>6<br><input type="radio" value="6" name="attr_HP" /></td>
+                            <td>7<br><input type="radio" value="7" name="attr_HP" /></td>
+                            <td>8<br><input type="radio" value="8" name="attr_HP" /></td>
+                            <td>9<br><input type="radio" value="9" name="attr_HP" /></td>
+                        </tr>
+                        <tr>
+                            <td>10<br><input type="radio" value="10" name="attr_HP" /></td>
+                            <td>11<br><input type="radio" value="11" name="attr_HP" /></td>
+                            <td>12<br><input type="radio" value="12" name="attr_HP" /></td>
+                            <td>13<br><input type="radio" value="13" name="attr_HP" /></td>
+                            <td>14<br><input type="radio" value="14" name="attr_HP" /></td>
+                            <td>15<br><input type="radio" value="15" name="attr_HP" checked="true" /></td>
+                            <td>16<br><input type="radio" value="16" name="attr_HP" /></td>
+                        </tr>
+                        <tr>
+                            <td>17<br><input type="radio" value="17" name="attr_HP" /></td>
+                            <td>18<br><input type="radio" value="18" name="attr_HP" /></td>
+                            <td>19<br><input type="radio" value="19" name="attr_HP" /></td>
+                            <td>20<br><input type="radio" value="20" name="attr_HP" /></td>
+                            <td>21<br><input type="radio" value="21" name="attr_HP" /></td>
+                            <td>22<br><input type="radio" value="22" name="attr_HP" /></td>
+                            <td>23<br><input type="radio" value="23" name="attr_HP" /></td>
+                        </tr>
+                        <tr>
+                            <td>24<br><input type="radio" value="24" name="attr_HP" /></td>
+                            <td>25<br><input type="radio" value="25" name="attr_HP" /></td>
+                            <td>26<br><input type="radio" value="26" name="attr_HP" /></td>
+                            <td>27<br><input type="radio" value="27" name="attr_HP" /></td>
+                            <td>28<br><input type="radio" value="28" name="attr_HP" /></td>
+                            <td>29<br><input type="radio" value="29" name="attr_HP" /></td>
+                            <td>30<br><input type="radio" value="30" name="attr_HP" /></td>
+                        </tr>
+                        <tr>
+                            <td>31<br><input type="radio" value="31" name="attr_HP" /></td>
+                            <td>32<br><input type="radio" value="32" name="attr_HP" /></td>
+                            <td>33<br><input type="radio" value="33" name="attr_HP" /></td>
+                            <td>34<br><input type="radio" value="34" name="attr_HP" /></td>
+                            <td>35<br><input type="radio" value="35" name="attr_HP" /></td>
+                            <td>36<br><input type="radio" value="36" name="attr_HP" /></td>
+                            <td>37<br><input type="radio" value="37" name="attr_HP" /></td>
+                        </tr>
+                        <tr>
+                            <td>38<br><input type="radio" value="38" name="attr_HP" /></td>
+                            <td>39<br><input type="radio" value="39" name="attr_HP" /></td>
+                            <td>40<br><input type="radio" value="40" name="attr_HP" /></td>
+                            <td>41<br><input type="radio" value="41" name="attr_HP" /></td>
+                            <td>42<br><input type="radio" value="42" name="attr_HP" /></td>
+                            <td>43<br><input type="radio" value="43" name="attr_HP" /></td>
+                            <td>44<br><input type="radio" value="44" name="attr_HP" /></td>
+                        </tr>
+                        <tr>
+                            <td>45<br><input type="radio" value="45" name="attr_HP" /></td>
+                            <td>46<br><input type="radio" value="46" name="attr_HP" /></td>
+                            <td>47<br><input type="radio" value="47" name="attr_HP" /></td>
+                            <td>48<br><input type="radio" value="48" name="attr_HP" /></td>
+                            <td>49<br><input type="radio" value="49" name="attr_HP" /></td>
+                            <td>50<br><input type="radio" value="50" name="attr_HP" /></td>
+                            <td>51<br><input type="radio" value="51" name="attr_HP" /></td>
+                        </tr>    
+                        <tr>
+                            <td>52<br><input type="radio" value="52" name="attr_HP" /></td>
+                            <td>53<br><input type="radio" value="53" name="attr_HP" /></td>
+                            <td>54<br><input type="radio" value="54" name="attr_HP" /></td>
+                            <td>55<br><input type="radio" value="55" name="attr_HP" /></td>
+                            <td>56<br><input type="radio" value="56" name="attr_HP" /></td>
+                            <td>57<br><input type="radio" value="57" name="attr_HP" /></td>
+                            <td>58<br><input type="radio" value="58" name="attr_HP" /></td>
+                           </tr>
+                            <tr>
+                            <td>59<br><input type="radio" value="59" name="attr_HP" /></td>
+                            <td>60<br><input type="radio" value="60" name="attr_HP" /></td>
+                            <td>61<br><input type="radio" value="61" name="attr_HP" /></td>
+                            <td>62<br><input type="radio" value="62" name="attr_HP" /></td>
+                            <td>63<br><input type="radio" value="63" name="attr_HP" /></td>
+                            <td>64<br><input type="radio" value="64" name="attr_HP" /></td>
+                            <td>65<br><input type="radio" value="65" name="attr_HP" /></td>
+                           </tr>
+                            <tr>
+                            <td>66<br><input type="radio" value="66" name="attr_HP" /></td>
+                            <td>67<br><input type="radio" value="67" name="attr_HP" /></td>
+                            <td>68<br><input type="radio" value="68" name="attr_HP" /></td>
+                            <td>69<br><input type="radio" value="69" name="attr_HP" /></td>
+                            <td>70<br><input type="radio" value="70" name="attr_HP" /></td>
+                            <td>71<br><input type="radio" value="71" name="attr_HP" /></td>
+                            <td>72<br><input type="radio" value="72" name="attr_HP" /></td>
+                           </tr>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</p>
+<hr/>
+<p>
+    <h3 style="text-align: center; color: #FFF; background-color: #000;">Skills</h3>
+    <div class='sheet-3colrow'>
+        <div class='sheet-col'>
+            <table style="width: 100%;">
+                </tr>
+                <tr>
+                <tr>
+                    <td></td>
+                    
+                <tr>
+              </tr>
+               </tr>
+                <tr>
+                    <td></td>
+                    <td><strong>Communications</strong></td>
+                    <td><input type="number" name="attr_Communications" value="{[ceil(@{COL}+@{APP})/2}]" disabled="true"/></td>
+               </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Bargain"  /></td>
+                    <td>Barter </td>
+                    <td><input type="number" name="attr_Barter"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Barter} Barter" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Bribe"  /></td>
+                    <td>Bribe </td>
+                    <td><input type="number" name="attr_Bribe"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Barter} Barter" /></td>
+                </tr>
+                
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Contacts"  /></td>
+                    <td>Contacts </td>
+                    <td><input type="number" name="attr_Contacts"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Contacts} Contacts" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Custom"  /></td>
+                    <td>Custom</td>
+                    <td><input type="number" name="attr_Custom"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Custom} Custom" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Fast-Talk"  /></td>
+                    <td>Fast Talk </td>
+                    <td><input type="number" name="attr_Fast-Talk"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Fast-Talk} Fast Talk" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Interrogate"  /></td>
+                    <td>Interrogate </td>
+                    <td><input type="number" name="attr_Interrogate"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Interrogate} Interrogate" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Intimidate"  /></td>
+                    <td>Intimidate </td>
+                    <td><input type="number" name="attr_Interrogate"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Intimidate} Intimidate" /></td>
+                </tr>
+                 <tr>
+                    <td><input type="checkbox" name="attr_Success-Persuade"  /></td>
+                    <td>Persuade </td>
+                    <td><input type="number" name="attr_Persuade"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Persuade} Persuade" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Manners"  /></td>
+                    <td>Manners </td>
+                    <td><input type="number" name="attr_Manners"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Manners} Manners" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Seduce"  /></td>
+                    <td>Seduce </td>
+                    <td><input type="number" name="attr_Credit-Seduce"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Seduce} Seduce" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Communication1"  /></td>
+                    <td><input type="text" name="attr_Communication1-Name" style="width: 160px" /></td>
+                    <td><input type="number" name="attr_Communication1" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Communication1} @{Communication1-Name}" /></td>
+                    </tr>
+                <tr>
+                    <td></td>
+                    <td><strong>Languages</strong></td>
+                    <td><input type="number" name="attr_Languages" value="@{INT}" disabled="true" /></td>
+                    </tr>
+                    </tr>
+                <tr>
+                    <td></td>
+                   
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Own-Language"  /></td>
+                    <td><input type="text" name="attr_Own-Language-Name" style="width: 160px" /></td>
+                    <td><input type="number" name="attr_Own-Language" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Own-Language} @{Own-Language-Name}" /></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Language1"  /></td>
+                    <td><input type="text" name="attr_Language1-Name" style="width: 160px" /></td>
+                    <td><input type="number" name="attr_Language1" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Language1} @{Language1-Name}" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Language2"  /></td>
+                    <td><input type="text" name="attr_Language2-Name" style="width: 160px" /></td>
+                    <td><input type="number" name="attr_Language2" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Language2} @{Language2-Name}" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Language3"  /></td>
+                    <td><input type="text" name="attr_Language3-Name" style="width: 160px" /></td>
+                    <td><input type="number" name="attr_Language3" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Language3} @{Language3-Name}" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Language4"  /></td>
+                    <td><input type="text" name="attr_Language4-Name" style="width: 160px" /></td>
+                    <td><input type="number" name="attr_Language4" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Language4} @{Language4-Name}" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Language5"  /></td>
+                    <td><input type="text" name="attr_Language5-Name" style="width: 160px" /></td>
+                    <td><input type="number" name="attr_Language5" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Language5} @{Language5-Name}" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Language6"  /></td>
+                    <td><input type="text" name="attr_Language6-Name" style="width: 160px" /></td>
+                    <td><input type="number" name="attr_Language6" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Language6} @{Language6-Name}" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Language7"  /></td>
+                    <td><input type="text" name="attr_Language7-Name" style="width: 160px" /></td>
+                    <td><input type="number" name="attr_Language7" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Language7} @{Language7-Name}" /></td>
+                </tr>
+                </table>
+                <tr>
+                  <fieldset class="repeating_Skills">
+                      <input type="checkbox" name="attr_Success"  />
+                      <input type="text" name="attr_Skillname" style="width: 145px" />
+                      <input type="number" name="attr_Score" />
+                      <button type="roll" value="/roll 1d100<@{Score} @{Skillname}" />
+                  </fieldset>
+                </tr>
+                <table style="width: 100%;">
+                <tr>
+                
+                <tr>
+                    <td></td>
+                    <td><strong>Knowledge</strong></td>
+                    <td><input type="number" name="attr_Knowledge" value="@{INT}" disabled="true" /></td>
+                </tr>
+                <tr>
+                    </tr>
+                     <tr>
+                    <td><input type="checkbox" name="attr_Success-Animal"  /></td>
+                    <td>Animal Handling </td>
+                    <td><input type="number" name="attr_Animal"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Animal} Animal Handling" /></td>
+                </tr> 
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Arcana"  /></td>
+                    <td>Arcana </td>
+                    <td><input type="number" name="attr_Arcana"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Arcana} Arcana" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Astronomy"  /></td>
+                    <td>Astronomy </td>
+                    <td><input type="number" name="attr_Astronomy"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Astronomy} Astronomy" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Bind"  /></td>
+                    <td>Bind Wounds </td>
+                    <td><input type="number" name="attr_Bind"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Bind} Bind Wounds" /></td>
+                    
+                </tr>  
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Craft Alchemy"  /></td>
+                    <td>Craft Alchemy </td>
+                    <td><input type="number" name="attr_Craft-Alchemy"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Craft-Herbal} Craft Alchemy" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Craft Herbalism"  /></td>
+                    <td>Craft Herbalism </td>
+                    <td><input type="number" name="attr_Craft-Herbal"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Craft-Herbal} Craft Herbalism" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Craft "  /></td>
+                    <td>Craft  </td>
+                    <td><input type="number" name="attr_Craft-"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Craft-} Craft " /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Craft Focus"  /></td>
+                    <td>Craft Focus </td>
+                    <td><input type="number" name="attr_Craft-Focus"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Craft-Focus} Craft Focus" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Craft Poison"  /></td>
+                    <td>Craft Poison </td>
+                    <td><input type="number" name="attr_Craft-Poison"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Craft-Poison} Craft Poison" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Disguise"  /></td>
+                    <td>Disguise </td>
+                    <td><input type="number" name="attr_Disguise"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Disguise} Disguise" /></td>
+                    
+               </tr>
+                
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Engineering"  /></td>
+                    <td>Engineering </td>
+                    <td><input type="number" name="attr_Engineering"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Engineering} Engineering" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Evaluate"  /></td>
+                    <td>Evaluate</td>
+                    <td><input type="number" name="attr_Evaluate"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Evaluate} Evaluate" /></td>
+               
+                </tr>
+            </table>
+        </div>
+        <div class='sheet-col'>
+            <table style="width: 100%;">
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Gambling"  /></td>
+                    <td>Gambling </td>
+                    <td><input type="number" name="attr_Gambling"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Gambling} Gambling" /></td>
+                </tr>
+                
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Herbalism"  /></td>
+                    <td>Herbalism </td>
+                    <td><input type="number" name="attr_Herblism"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Herbalism} Herbalism" /></td>
+               </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Intrigue"  /></td>
+                    <td>Intrigue </td>
+                    <td><input type="number" name="attr_Intrigue"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Intrigue} Intrigue" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Streetwise"  /></td>
+                    <td>Streetwise </td>
+                    <td><input type="number" name="attr_Streetwise"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Streetwise} Streetwise" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Outdoor-Survival"  /></td>
+                    <td>Survival </td>
+                    <td><input type="number" name="attr_Survival"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Survival} Survival" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Tactics"  /></td>
+                    <td>Tactics</td>
+                    <td><input type="number" name="attr_Tactics"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Tactics} Tactics" /></td>
+                 </tr>
+                  <tr>
+                    <td><input type="checkbox" name="attr_Success-Woodcraft"  /></td>
+                    <td>Woodcraft </td>
+                    <td><input type="number" name="attr_Woodcraft"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Woodcraft} Woodcraft" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Knowledge1"  /></td>
+                    <td><input type="text" name="attr_Knowledge1-Name" style="width: 160px" /></td>
+                    <td><input type="number" name="attr_Knowledge1" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Knowledge1} @{Knowledge1-Name}" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Knowledge2"  /></td>
+                    <td><input type="text" name="attr_Knowledge2-Name" style="width: 160px" /></td>
+                    <td><input type="number" name="attr_Knowledge2" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Knowledge2} @{Knowledge2-Name}" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Knowledge3"  /></td>
+                    <td><input type="text" name="attr_Knowledge3-Name" style="width: 160px" /></td>
+                    <td><input type="number" name="attr_Knowledge3" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Knowledge3} @{Knowledge3-Name}" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Knowledge4"  /></td>
+                    <td><input type="text" name="attr_Knowledge4-Name" style="width: 160px" /></td>
+                    <td><input type="number" name="attr_Knowledge4" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Knowledge4} @{Knowledge4-Name}" /></td>
+                </tr>
+                </table>
+                <tr>
+                  <fieldset class="repeating_Skills">
+                      <input type="checkbox" name="attr_Success"  />
+                      <input type="text" name="attr_Skillname" style="width: 145px" />
+                      <input type="number" name="attr_Score" />
+                      <button type="roll" value="/roll 1d100<@{Score} @{Skillname}" />
+                  </fieldset>
+                </tr>
+                <table style="width: 100%;">
+                <tr>
+                    <td></td>
+                    <td><strong>Manipulation</strong></td>
+                    <td><input type="number" name="attr_Manipulation" value="@{DEX}" disabled="true"  /></td>
+                        </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Arm-Trap"  /></td>
+                    <td>Arm/Disarm Trap </td>
+                    <td><input type="number" name="attr_Arm-Trap"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Arm-Trap} Arm/Disarm Trap" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Camouflage"  /></td>
+                    <td>Camouflage </td>
+                    <td><input type="number" name="attr_Camoflage"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Camouflage} Camouflage" /></td>
+                     </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Locksmith"  /></td>
+                    <td>Locksmith </td>
+                    <td><input type="number" name="attr_Locksmith"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Locksmith} Locksmith" /></td>
+               
+                </tr>
+                
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Pilot-Seacraft"  /></td>
+                    <td>Pilot Seacraft </td>
+                    <td><input type="number" name="attr_Pilot-Seacraft"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Pilot-Seacraft} Pilot Seacrat" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Pick-Lock"  /></td>
+                    <td>Pick Lock </td>
+                    <td><input type="number" name="attr_Pick-Lock"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Pick-Lock} Pick Lock" /></td>
+                    </tr>
+               
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Pick-Pocket"  /></td>
+                    <td>Pick Pocket </td>
+                    <td><input type="number" name="attr_Pick-Pocket"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Pick-Pocket} Pickpocket" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Slight-Of-Hand"  /></td>
+                    <td>Slight of Hand </td>
+                    <td><input type="number" name="attr_SlightOfHand"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{SlightOfHand} Slight of Hand" /></td>
+                    </tr> 
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Tinker"  /></td>
+                    <td>Tinker </td>
+                    <td><input type="number" name="attr_Tinker"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Tinker} Tinker" /></td>
+                     </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Manipulation1"  /></td>
+                    <td><input type="text" name="attr_Manipulation1-Name" style="width: 160px" /></td>
+                    <td><input type="number" name="attr_Manipulation1" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Manipulation1} @{Manipulation1-Name} " /></td>
+                
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><strong>Troop Command</strong></td>
+                    
+                        </tr>
+                    
+                    <tr>
+                    <td></td>    
+                    <td>Command</td>
+                    <td><input type="number" name="attr_Command" value="[(@{Synergy}+@{Leader}+@{Skill-Ranks}+@{focus}+@{ItemsMC})]" disabled="true" /></td>
+                    <td><button type="roll" value="/roll 1d20+@{Command} Command" /></td>
+                     </tr>
+                     <tr>
+                    <td></td>    
+                    <td>Skill Ranks</td>
+                    <td><input type="number" name="attr_Skill-Ranks"  /></td>
+                     </tr>
+                     <tr>
+                    <td></td>    
+                    <td>Synergy</td>
+                    <td><input type="number" name="attr_Synergy"  /></td>
+                     </tr>
+                     <tr>
+                    <td></td>    
+                    <td>Leadership</td>
+                    <td><input type="number" name="attr_Leader"  /></td>
+                     </tr>
+                      <tr>
+                    <td></td>    
+                    <td>Skill Focus</td>
+                    <td><input type="number" name="attr_focus"  /></td>
+                     </tr>
+                     <tr>
+                    <td></td>    
+                    <td>Items</td>
+                    <td><input type="number" name="attr_ItemsMC"  /></td>
+                     </tr>
+            </table>
+        </div>
+        <div class="sheet-col">
+            <table style="width: 100%;">
+                </tr>
+                <tr>
+                <tr>
+                    <td></td>
+                    <td><strong>Perception</strong></td>
+                    <td><input type="number" name="attr_Perception" value="@{SENS}" disabled="true" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Awareness"  /></td>
+                    <td>Awareness </td>
+                    <td><input type="number" name="attr_Awareness"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Awareness} Awareness" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Diserning"  /></td>
+                    <td>Discerning </td>
+                    <td><input type="number" name="attr_Discerning"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Discerning} Discerning" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Drinking"  /></td>
+                    <td>Drinking </td>
+                    <td><input type="number" name="attr_Drinking"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Drinking} Drinking" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Hunting"  /></td>
+                    <td>Hunting </td>
+                    <td><input type="number" name="attr_Hunting"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Hunting} Hunting" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Navigate"  /></td>
+                    <td>Mapping/Navigate </td>
+                    <td><input type="number" name="attr_Navigate"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Navigate} Navigate" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Spot-Hidden"  /></td>
+                    <td>Spot Hidden </td>
+                    <td><input type="number" name="attr_Spot-Hidden"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Spot-Hidden} Spot Hidden" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Track"  /></td>
+                    <td>Track/Scout </td>
+                    <td><input type="number" name="attr_Track"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Track} Track" /></td>
+               </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Shadowing"  /></td>
+                    <td>Shadowing </td>
+                    <td><input type="number" name="attr_Shadowing"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Shadowing} Shadow" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Sense-Direction"  /></td>
+                    <td>Sense Direction </td>
+                    <td><input type="number" name="attr_Sense-Direction"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Sense-Direction} Sense of Direction" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Perception1"  /></td>
+                    <td><input type="text" name="attr_Perception1-Name" style="width: 160px" /></td>
+                    <td><input type="number" name="attr_Perception1" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Perception1} @{Perception1-Name}" /></td>
+                 </tr>
+                <tr>
+                <tr>
+                    <td></td>
+                    <td><strong>Agility&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skil Max</strong></td>
+                    <td><input type="number" name="attr_Agility"  /></td>
+                    </tr>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Acrobatics" /></td>
+                    <td>Acrobatics </td>
+                    <td><input type="number" name="attr_Acrobatics" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Acrobatics} Acrobatics" /></td>
+                 </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Climb" /></td>
+                    <td>Climb </td>
+                    <td><input type="number" name="attr_Climb" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Climb} Climb" /></td>
+                    
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Dodge"  /></td>
+                    <td>Dodge </td>
+                    <td><input type="number" name="attr_Dodge" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Dodge} Dodge" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Hide"  /></td>
+                    <td>Hide </td>
+                    <td><input type="number" name="attr_Hide"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Hide} Hide" /></td>
+                     </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Jump"  /></td>
+                    <td>Jump </td>
+                    <td><input type="number" name="attr_Jump"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Jump} Jump" /></td>
+                </tr>
+                
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Ride"  /></td>
+                    <td>Ride </td>
+                    <td><input type="number" name="attr_Ride"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Ride} Ride" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Sneak"  /></td>
+                    <td>Sneak </td>
+                    <td><input type="number" name="attr_Sneak"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Sneak} Sneek" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Swim" /></td>
+                    <td>Swim </td>
+                    <td><input type="number" name="attr_Swim" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Swim} Swim" /></td>
+                
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Throw"  /></td>
+                    <td>Throw </td>
+                    <td><input type="number" name="attr_Throw"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Throw} Throw" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Agility1"  /></td>
+                    <td><input type="text" name="attr_Agility1-Name" style="width: 160px" /></td>
+                    <td><input type="number" name="attr_Agility1" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Agility1} @{Agility1-Name}" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Agility2"  /></td>
+                    <td><input type="text" name="attr_Agility2-Name" style="width: 160px" /></td>
+                    <td><input type="number" name="attr_Agility2" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Agility2} @{Agility2-Name}" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Agility3"  /></td>
+                    <td><input type="text" name="attr_Agility3-Name" style="width: 160px" /></td>
+                    <td><input type="number" name="attr_Agility3" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Agility3} @{Agility3-Name}" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Agility4"  /></td>
+                    <td><input type="text" name="attr_Agility4-Name" style="width: 160px" /></td>
+                    <td><input type="number" name="attr_Agility4" /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Agility4} @{Agility4-Name}" /></td>
+                <tr>
+                    <td style="width: 20px;"></td>
+                    <td><strong>Combat Skills&nbsp;&nbsp;&nbsp;&nbsp;Skill Max</strong></td>
+                     <td><input type="number" name="attr_Communications"  /></td>
+                    <td></td>
+                    <td></td>
+                    
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Sword"  /></td>
+                    <td>Blades </td>
+                    <td><input type="number" name="attr_Sword"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Sword} Sword"  /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Ranged"  /></td>
+                    <td>Bows </td>
+                    <td><input type="number" name="attr_Ranged"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Ranged} Ranged" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Thrown"  /></td>
+                    <td>Thrown </td>
+                    <td><input type="number" name="attr_Thrown"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Thrown} Thrown" /></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Axe"  /></td>
+                    <td>Axe/Hammer </td>
+                    <td><input type="number" name="attr_Axe"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Axe} Axe" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Polearms"  /></td>
+                    <td>Polearms </td>
+                    <td><input type="number" name="attr_Polearms"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Polearms} Polearms" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Unarmed"  /></td>
+                    <td>Unarmed Attack </td>
+                    <td><input type="number" name="attr_Unarmed"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Unarmed} Unarmed Attack" /></td>
+                    </tr>
+                <tr>
+                    <td><input type="checkbox" name="attr_Success-Block"  /></td>
+                    <td>Block/Grab/Parry </td>
+                    <td><input type="number" name="attr_Block"  /></td>
+                    <td><button type="roll" value="/roll 1d100<@{Block} Block/Parry" /></td>
+                    
+                </tr>
+                </tr>
+            </table>
+            <br>
+            <fieldset class="repeating_Skills">
+               <input type="checkbox" name="attr_Success"  />
+               <input type="text" name="attr_Skillname" style="width: 145px" />
+               <input type="number" name="attr_Score" />
+               <button type="roll" value="/roll 1d100<@{Score} @{Skillname}" />
+            </fieldset>
+        </div>
+    </div>
+</p>
+<hr/>
+<p>
+    <h3 style="text-align: center; color: #FFF; background-color: #000;">Hit Locations</h3>
+     
+    <table style="width: 100%;">
+       
+        <th>Hit Location</th>
+    
+            
+            <th>Body<br>Points</th>
+            <th>Current</th>
+            <th>Armor<br>PV</th>
+            <th>N.L.<br>PV</th>
+            <th>Armor Worn</th>
+            <th>Notes</th>
+            </thead>
+            </tr>
+        </tbody>
+        
+            <tbody>
+                 </tr>
+                  <tr>
+                <td>Head</td>
+                <td><input type="number" name="attr_Head-BP" /></td>
+                <td><input type="number" name="attr_Head-Current" /></td>
+                <td><input type="number" name="attr_Head-ArmorPV"/></td>
+                <td><input type="number" name="attr_Head-DuralPV"/></td>
+                <td><input type="text" name="attr_Head-Armor" style="width: 240px" /></td>
+                 <td><input type="text" name="attr_Armor-Notes-H" style="width: 240px" /></td>
+            </tr>
+                 
+            <tr>
+                <td>Torso</td>
+                
+                <td><input type="number" name="attr_Torso-BP" /></td>
+                <td><input type="number" name="attr_Torso-Current" /></td>
+                <td><input type="number" name="attr_Torso-ArmorPV"/></td>
+                <td><input type="number" name="attr_Torso-DuralPV"/></td>
+                <td><input type="text" name="attr_Torso-Armor" style="width: 240px" /></td>
+                <td><input type="text" name="attr_Armor-Notes-T" style="width: 240px" /></td>
+                </tr>
+                <tr>
+                <td>Right Arm</td>
+                
+                <td><input type="number" name="attr_RA-BP" /></td>
+                <td><input type="number" name="attr_RA-Current" /></td>
+                <td><input type="number" name="attr_RA-ArmorPV"/></td>
+                <td><input type="number" name="attr_RA-DuralPV"/></td>
+                <td><input type="text" name="attr_RA-Armor" style="width: 240px" /></td>
+                 <td><input type="text" name="attr_Armor-Notes-RA" style="width: 240px" /></td>
+                </tr>
+            <tr>
+                <td>Left Arm</td>
+                
+                <td><input type="number" name="attr_LA-BP" /></td>
+                <td><input type="number" name="attr_LA-Current" /></td>
+                <td><input type="number" name="attr_LA-ArmorPV"/></td>
+                <td><input type="number" name="attr_LA-DuralPV"/></td>
+                <td><input type="text" name="attr_LA-Armor" style="width: 240px" /></td>
+                 <td><input type="text" name="attr_Armor-Notes-LA" style="width: 240px" /></td>
+                </tr>
+            <tr>
+                <td>Right Leg</td>
+                
+                <td><input type="number" name="attr_RL-BP" /></td>
+                <td><input type="number" name="attr_RL-Current" /></td>
+                <td><input type="number" name="attr_RL-ArmorPV"/></td>
+                <td><input type="number" name="attr_RL-DuralPV"/></td>
+                <td><input type="text" name="attr_RL-Armor" style="width: 240px" /></td>
+                 <td><input type="text" name="attr_Armor-Notes-RL" style="width: 240px" /></td>
+                </tr>
+            <tr>
+                <td>Left Leg</td>
+               
+                <td><input type="number" name="attr_LL-BP" /></td>
+                <td><input type="number" name="attr_LL-Current" /></td>
+                <td><input type="number" name="attr_LL-ArmorPV"/></td>
+                <td><input type="number" name="attr_LL-DuralPV"/></td>
+                <td><input type="text" name="attr_LL-Armor" style="width: 240px" /></td>
+                 <td><input type="text" name="attr_Armor-Notes-LL" style="width: 240px" /></td>
+                </tr>
+          </table> 
+             <tr>
+                <td><strong>Shield</strong></td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="text" name="attr_Shield-Armor" style="width: 240px" /></td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                 <td><input type="text" name="attr_Armor-Notes-S" style="width: 240px" /></td>
+            </tr>
+ <h3 style="text-align: center; color: #FFF; background-color: #000;">:Hand-To-Hand:</h3>
+       <table style="width: 80%;">
+            <th><br><br>Attack or Weapon</th>
+            <th><br><br>Skill %</th>
+            <th><br><br>Damage</th>
+            <th><br><br>Attacks</th>
+            <th><br>DMG<br>Bonus</th>
+            <th><br><br>To Hit</th>
+            <th><br><br>Dmg</th>
+            <th></th>
+        
+        
+        <tbody>
+                 </tr>
+            <tr>
+                <td>Punch</td>
+                <td><input type="number" name="attr_Punch" value="@{Unarmed}" disabled="true"/></td>
+                <td>1d6<name="attr_Punch-Damage" /></td>
+                <td><input type="number" name="attr_ApR" /></td>
+               <td><input type="text" name="attr_DMG-Bonus" style="width: 50px" /></td>
+                <td><button type="roll" value="/roll 1d100<@{Unarmed} Punch" /></td>
+                <td><button type="roll" value="/roll 1d6+@{DMG-Bonus}, \n/roll 1t[Hit-Location]" name="roll_DMG/LOCATION"></button>
+                </tr>
+            <tr>
+                <td>Kick </td>
+                <td><input type="number" name="attr_Kick" value="@{Unarmed}" disabled="true" /></td>
+                <td>1d8<name="attr_Kick-Damage" /></td>
+                <td><input type="number" name="attr_ApR" /></td>
+               <td><input type="text" name="attr_DMG-Bonus" style="width: 50px" /></td>
+                <td><button type="roll" value="/roll 1d100<@{Unarmed} Kick" /></td>
+                <td><button type="roll" value="/roll 1d8+@{DMG-Bonus}, \n/roll 1t[Hit-Location]" name="roll_DMG/LOCATION"></button>
+            </tr>
+            <tr>
+                <td>Head Butt </td>
+                <td><input type="number" name="attr_Head-Butt" value="@{Unarmed}" disabled="true" /></td>
+                <td>1d4<name="attr_Head-Butt-Damage"/></td>
+                <td><input type="number" name="attr_ApR" /></td>
+                <td><input type="text" name="attr_DMG-Bonus" style="width: 50px" /></td>
+                <td><button type="roll" value="/roll 1d100<@{Unarmed} Head butt" /></td>
+                <td><button type="roll" value="/roll 1d4+@{DMG-Bonus}, \n/roll 1t[Hit-Location]" name="roll_DMG/LOCATION"></button>
+            </tr>
+            <tr>
+                <td>Throw </td>
+                <td><input type="number" name="attr_Throw" value="@{Unarmed}" disabled="true" /></td>
+                <td>1d8<name="attr_Throw-Damage"/></td>
+                <td><input type="number" name="attr_ApR" /></td>
+                <td><input type="text" name="attr_DMG-Bonus" style="width: 50px" /></td>
+                <td><button type="roll" value="/roll 1d100<@{Unarmed} Throw" /></td>
+                <td><button type="roll" value="/roll 1d8+@{DMG-Bonus}, \n/roll 1t[Hit-Location]" name="roll_DMG/LOCATION"></button>
+                
+            </tr>
+            <tr>
+                <td>Block/Grab </td>
+                <td><input type="number" name="attr_Throw" value="@{Block}" disabled="true" /></td>
+                <td>---<name="attr_Throw-Damage"/></td>
+                <td><input type="number" name="attr_ApR" /></td>
+                <td><input type="text" name="attr_DMG-Bonus" style="width: 50px" /></td>
+                <td><button type="roll" value="/roll 1d100<@{Block} Throw" /></td>
+                
+                
+            </tr>
+        </tbody>
+        
+    </table>
+    
+    <fieldset class="repeating_Hand-to-Hand">
+        <table style="width: 80%;" >
+            <tr>
+               <td><input type="text" name="attr_Attack-Weapon" style="width: 108px;"/></td>
+               <td><input type="number" name="attr_Score" value="@{Unarmed}" disabled="true"/></td>
+               <td><input type="text" name="attr_Damage1" style="width: 60px" /></td>
+               <td><input type="number" name="attr_Attacks-Round" style="width: 50px" /></td>
+               <td><input type="text" name="attr_Repeat-DB" style="width: 50px" /></td>
+               <td><button type="roll" value="/roll 1d100<@{Score} @{Attack-Weapon}" /></td>
+               <td><button type="roll" value="/roll @{Damage1}+@{Repeat-DB}, \n/roll 1t[Hit-Location]" name="roll_DMG/LOCATION"></button>
+            </tr>
+        </table>
+    </fieldset>
+</p>
+<hr/>
+<p>
+    <h3 style="text-align: center; color: #FFF; background-color: #000;">:Weapons:</h3>
+    <table style="width: 850px">
+        <thead style="font-size: 10px">
+            <th style="text-align: left; width:170px"><br><br>Weapon</th>
+            <th style="width: 55px"><br><br>Skill% </th>
+            <th style="width: 55px" ><br><br>Parry%</th>
+            <th style="width: 50px" ><br><br>Damage</th>
+            <th style="width: 40px"><br><br>Dmg Bonus</th>
+            <th style="width: 45px"><br><br>Range</th>
+            <th style="width: 40px" ><br><br>No. of Att</th>
+            <th style="width: 60px" ><br><br>Ammo</th>
+            <th style="width: 70px" ><br><br>Break</th>
+            <th style="width: 170px" ><br><br>Notes</th>
+            <th style="width: 25px"><br>Hit</th><th style="width: 20px">DMG</th><th style="width: 25px">Parry</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <fieldset class="repeating_Weapons">
+        <table>
+            <tr>
+                <td><input type="text" name="attr_Weapon" style="width: 160px" /></td>
+                <td><input type="number" name="attr_Score" style="width: 50px"/></td>
+                <td><input type="number" name="attr_Parry" style="width: 50px"/></td>
+                <td><input type="text" name="attr_Damage2" style="width: 70px" /></td>
+                <td><input type="text" name="attr_Damage-Bonus" style="width: 30px" /></td>
+                <td><input type="number" name="attr_Range" style="width: 55px" /></td>
+                <td><input type="text" name="attr_Shots-per-Round"style="width: 40px" /></td>
+                <td><input type="number" name="attr_Shots-in-Gun"style="width: 50px" /></td>
+                <td><input type="number" name="attr_Break-Num" style="width: 50px"/></td>
+                <td><input type="text" name="attr_Notes" style="width: 200px"/></td>
+                <td><button type="roll" value="/roll 1d100<@{Score} @{Weapon}" /></td>
+                <td><button type="roll" value="/roll @{Damage2}, \n/roll 1t[Hit-Location]" name="roll_DMG/LOCATION"></button>
+                <td><button type="roll" value="/roll 1d100<@{Parry} @{Weapon}" /></td>
+            </tr>
+        </table>
+    </fieldset>
+</p>
+<hr/>
+<p>
+    <h3 style="text-align: center; color: #FFF; background-color: #000;">:Feats:</h3>
+    <div class='sheet-2colrow'>
+        <div class='sheet-col'>
+            <tr>
+                    <td><h4><input type="text" name="attr_Feat1" style="width: 300px"/></h4></td>
+                    <td><textarea name="attr_1Feat"  style="height: 30px"></textarea>
+                </tr>  
+                <tr>
+                    <td><input type="text" name="attr_Feat2" style="width: 300px"/></td>
+                    <td><textarea name="attr_2Feat"  style="height: 30px"></textarea>
+                </tr>  
+                <tr>
+                    <td><input type="text" name="attr_Feat3" style="width: 300px"/></td>
+                    <td><textarea name="attr_3Feat"  style="height: 30px"></textarea>
+                </tr>
+                <tr>
+                    <td><input type="text" name="attr_Feat4" style="width: 300px"/></td>
+                    <td><textarea name="attr_4Feat"  style="height: 30px"></textarea>
+                </tr>  
+                <tr>
+                    <td><input type="text" name="attr_Feat5" style="width: 300px"/></td>
+                    <td><textarea name="attr_5Feat"  style="height: 30px"></textarea>
+                </tr>  
+                <tr>
+                    <td><input type="text" name="attr_Feat6" style="width: 300px"/></td>
+                    <td><textarea name="attr_6Feat"  style="height: 30px"></textarea>
+                </tr>
+                <tr>
+                    <td><input type="text" name="attr_Feat7" style="width: 300px"/></td>
+                    <td><textarea name="attr_7Feat"  style="height: 30px"></textarea>
+                </tr>
+                 <fieldset class="repeating_Feats">
+               <input type="text" name="attr_Featname" style="width: 230px" />
+               <td><textarea name="attr_Featdiscript"  style="height: 30px"></textarea>
+            </fieldset>
+           
+        </div>
+        <div class='sheet-col'>
+                 <tr>
+                    <td><input type="text" name="attr_Feat8" style="width: 300px"/></td>
+                    <td><textarea name="attr_8Feat"  style="height: 30px"></textarea>
+                </tr>  
+                <tr>
+                    <td><input type="text" name="attr_9Feat" style="width: 300px"/></td>
+                    <td><textarea name="attr_Feat9"  style="height: 30px"></textarea>
+                </tr>  
+                <tr>
+                    <td><input type="text" name="attr_10Feat" style="width: 300px"/></td>
+                    <td><textarea name="attr_Feat10"  style="height: 30px"></textarea>
+                </tr>
+                <tr>
+                    <td><input type="text" name="attr_11Feat" style="width: 300px"/></td>
+                    <td><textarea name="attr_Feat11"  style="height: 30px"></textarea>
+                </tr>  
+                <tr>
+                    <td><input type="text" name="attr_12Feat" style="width: 300px"/></td>
+                    <td><textarea name="attr_Feat12"  style="height: 30px"></textarea>
+                </tr>  
+                <tr>
+                    <td><input type="text" name="attr_13Feat" style="width: 300px"/></td>
+                    <td><textarea name="attr_Feat13"  style="height: 30px"></textarea>
+                </tr>
+                 <tr>
+                    <td><input type="text" name="attr_14Feat" style="width: 300px"/></td>
+                    <td><textarea name="attr_Feat14"  style="height: 30px"></textarea>
+                </tr>
+                <fieldset class="repeating_Feats">
+               <input type="text" name="attr_Featname1" style="width: 300px" />
+               <td><textarea name="attr_Featdiscript1"  style="height: 30px"></textarea>
+            </fieldset>
+            </div>
+    </div>
+</p>
+
+<hr/>    
+    <div class='sheet-2colrow'>
+        <div class='sheet-col'>
+            <p>
+             <strong>1Gp = 20Sp = 400Cp = 4000bits</strong></td>   <h3 style="text-align: center; color: #FFF; background-color: #000;">:Wealth:</h3>
+                <table>
+                    <tr>
+                        
+                        <td><h4>:Coin Purse:</h4>
+                        <input type="number" name="attr_Gold" style="width: 40px" ><strong>Gp</strong>
+                        <input type="number" name="attr_Silver" style="width: 56px" ><strong>SP</strong>
+                        <input type="number" name="attr_Copper" style="width: 40px" ><strong>Cp</strong>
+                        <input type="number" name="attr_bits" style="width: 40px" ><strong>Bits</strong>
+                        <input type="number" name="attr_Gemsr" style="width: 50px" ><strong>Gems/Sp</strong>
+                        </td>
+                        
+                    </tr>
+                    <td><strong>1Gp = 20Sp = 400Cp = 4000bits</strong></td>
+                </table>
+                <table>
+                    <tr>
+                        <strong>Other Wealth</strong> <textarea name="attr_Wealth" style="height: 80px"></textarea><br>
+                        <strong>Gems/Stones</strong> <textarea name="attr_Real-Estate" style="height: 80px"></textarea>
+                    </tr>
+                </table>
+                <strong>Land Holdings</strong> <textarea name="attr_Personal-Property" style="height: 60px"></textarea><br>
+                
+            </p>
+            <p>
+                <h3 style="text-align: center; color: #FFF; background-color: #000;">:Adventureing Gear &amp; Other Possesions:</h3>
+                <textarea name="attr_Gear-Possessions" style="height: 250px"></textarea> 
+            </p>
+             <p>
+                <h3 style="text-align: center; color: #FFF; background-color: #000;">:Potions &amp; Poisons: </h3>
+                <textarea name="attr_Poison" style="height: 280px "></textarea> 
+            </p>
+        </div>
+        <div class='sheet-col'>
+            <p>
+                <h3 style="text-align: center; color: #FFF; background-color: #000;">:Mastercraft Weapons: </h3>
+                <textarea style="height: 250px" name="attr_MC-Weapons"></textarea> 
+            </p>
+            <p>
+                <h3 style="text-align: center; color: #FFF; background-color: #000;">:Mastercraft Armor &amp; Equipment: </h3>
+                <textarea style="height: 250px" name="attr_MC-Armor"></textarea> 
+            </p>
+            <p>
+                <h3 style="text-align: center; color: #FFF; background-color: #000;">Scroll Case</h3>
+                <div class='sheet-2colrow'>
+                    <div class='sheet-col'>
+                        Scrolls <textarea name="attr_Artefacts"></textarea>
+                    </div>
+                    <div class='sheet-col'>
+                        Maps <textarea name="attr_Spells"></textarea>
+                    </div>
+                </div>
+            </p>
+            <p>
+                <h3 style="text-align: center; color: #FFF; background-color: #000;">:Mount:</h3>
+                <table style"width: 100%;">
+            <tr>
+                    <td> Name</td>
+                    <td><input type="text" name="attr_MountName" style="width: 280px" /> 
+                </tr>
+                <tr>
+                    <td>Type</td>
+                    <td><input type="text" name="attr_Mounttype" style="width: 280px" style="height: 80px"> 
+                </tr>
+                <tr>
+                    <td>Condition</td>
+                    <td><input type="text" name="attr_Condition" style="width: 280px" style="height: 80px">
+                </tr>
+         <tr>
+                    <td>Attack</td>
+                    <td> <input type="number" name="attr_Mattack" style="width: 40px"/> 
+                    DF <input type="number" name="attr_MDF" style="width: 40px" />
+                    HP <input type="number" name="attr_MHP" style="width: 40px"/></td>
+                </tr>
+                  <tr>
+                    <td>Bite</td>
+                    <td> <input type="text" name="attr_MBitte" style="width: 45px"/> 
+                    Kick <input type="text" name="attr_Mkick" style="width: 45px" />
+                    Smash <input type="text" name="attr_Msmash" style="width: 50px"/>
+                    Trample <input type="text" name="attr_Mtrample" style="width: 65px" /></td>
+                </tr>
+                    
+                 <tr>
+                    <td>Walk</td>
+                    <td> <input type="number" name="attr_Mountwalk" style="width: 40px"/> 
+                    Trot <input type="number" name="attr_Trot" style="width: 40px" />
+                    Canter <input type="number" name="attr_canter" style="width: 40px" />
+                    Gallop <input type="number" name="attr_Gallop" style="width: 40px"/></td>
+                </tr>
+                <tr>
+                    <td>Tricks</td>
+                    <td><textarea name="attr_Tricks"  style="height: 30px"></textarea>
+                </tr>  
+                <tr>
+                    <td>Gear</td>
+                    <td><textarea name="attr_Gear"  style="height: 30px"></textarea>
+                </tr>  
+                 
+                </table>
+                </p>
+        </div>
+    </div>
+</p>
+<p>
+    <h3 style="text-align: center; color: #FFF; background-color: #000;">Crafting Kits</h3>
+    <div class='sheet-2colrow'>
+        <div class='sheet-col'>
+            Alchemy <textarea name="attr_Caft-Alchemy"></textarea><br>
+            Poison <textarea name="attr_Craft-Poisons"></textarea>
+        </div>
+        <div class='sheet-col'>
+            Herbalism <textarea name="attr_Craft-Herb"></textarea><br>
+            Equipment <textarea name="attr_Craft-Equipment"></textarea>
+            </div>
+    </div>
+</p>
+<hr/>
+<p>
+<p>
+    <h3 style="text-align: center; color: #FFF; background-color: #000;">Personal Data</h3>
+    <div class='sheet-2colrow'>
+        <div class='sheet-col'>
+            Whom do you worship <textarea name="attr_Personal-worship"></textarea><br>
+            Discription/Background <textarea name="attr_Background"></textarea>
+        </div>
+        <div class='sheet-col'>
+            Wounds & Injuries <textarea name="attr_Wounds-Injuries"></textarea><br>
+            Marks & Scars <textarea name="attr_Marks-Scars"></textarea>
+            </div>
+    </div>
+</p>
+<p>
+                <h3 style="text-align: center; color: #FFF; background-color: #000;">Entities Encountered</h3>
+                <textarea name="attr_Entities-Encountered"></textarea> 
+            </p>
+<p>
+    <h3 style="text-align: center; color: #FFF; background-color: #000;">Adventurer History</h3>
+    <textarea name="attr_Ivestigator-History"></textarea>
+</p>
+<hr/>
+<p>
